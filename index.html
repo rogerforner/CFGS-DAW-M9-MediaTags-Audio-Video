@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Video.js -->
+    <link rel="stylesheet" href="http://vjs.zencdn.net/6.6.0/video-js.css">
+
+    <title>Cervesa Glup!</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- ESQUERRA -->
+        <div id="esquerra" class="col-4">
+          <!-- Títol -->
+          <div class="row mt-5 mb-3">
+            <div class="col-md-8 offset-md-2">
+              <h1 class="display-4 text-center text-warning">Glup!</h1>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+
+          <!-- Vídeo -->
+          <div class="row">
+            <div class="col-md-8 offset-md-2">
+              <video id="my-video" class="video-js vjs-fluid vjs-big-play-centered vjs-16-9"
+              controls preload="auto"
+              poster="assets/img/patrick-fore-beer.jpg" data-setup="{}">
+                <source src="assets/video/beer.mp4" type='video/mp4'>
+                <source src="assets/video/beer.webm" type='video/webm'>
+                <p class="vjs-no-js">
+                  To view this video please enable JavaScript, and consider upgrading to a web browser that
+                  <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                </p>
+              </video>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+
+          <!-- Text -->
+          <div class="row mt-5 mb-3">
+            <div class="col-md-8 offset-md-2">
+              <p class="lead text-center text-warning"><strong>Pròxima opertura!!</strong><br />
+              La millor cervesa <u>artesanal</u> del territori</p>
+              <p class="lead text-center text-warning"> T'ho perdràs?</p>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+
+          <!-- Àudio -->
+          <div class="row mt-5 mb-3">
+            <div class="col-md-8 offset-md-2">
+              <!-- Controlar àudio (mirar js) -->
+              <div class="btn-group btn-group-sm" role="group" aria-label="First group">
+                <button type="button" onclick="mostrarAudio()" class="btn btn-dark" data-toggle="tooltip" data-placement="top" title="Mostrar controls d'àudio">
+                  <i class="fa fa-audio-description fa-lg" aria-hidden="true"></i>
+                </button>
+                <button type="button" onclick="ocultarAudio()" class="btn btn-dark" data-toggle="tooltip" data-placement="top" title="Ocultar controls d'àudio">
+                  <i class="fa fa-minus fa-lg" aria-hidden="true"></i>
+                </button>
+              </div>
+              <!-- Controls àudio -->
+              <audio id="vivaldi" autoplay>
+                <source src="assets/audio/Vivaldi_Summer_Mvt_1_Allegro_non_molto.mp3" type="audio/mpeg">
+                <source src="assets/audio/Vivaldi_Summer_Mvt_1_Allegro_non_molto.ogg" type="audio/ogg">
+                <source src="assets/audio/Vivaldi_Summer_Mvt_1_Allegro_non_molto.wav" type="audio/wav">
+                El teu navegador no suporta àudio.
+              </audio>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.col -->
+
+        <!-- DRETA -->
+        <div id="dreta" class="col-8">
+          <div class="container-fluid">
+            <h1 id="contador" class="display-4 text-center text-warning pt-5"></h1>
+          </div>
+        </div>
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js" charset="utf-8"></script>
+    <!-- Video.js -->
+    <script src="http://vjs.zencdn.net/6.6.0/video.js"></script>
+  </body>
+</html>
